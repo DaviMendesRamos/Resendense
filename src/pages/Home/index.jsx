@@ -16,10 +16,11 @@ function Menu() {
           <img src={logoResen} alt="Viação Resendense" className="logo-img" />
         </div>
         <ul className="nav-links">
-          <li><a href="#home">Início</a></li>
-          <li><a href="#linhas">Linhas</a></li>
-          <li><a href="#horarios">Horários</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="home">Início</a></li>
+          <li><a href="linhas">Linhas</a></li>
+          <li><a href="horarios">Horários</a></li>
+          <li><a href="contato">Contato</a></li>
+          <li><a href="sobre"></a>Sobre</li>
         </ul>
       </nav>
 
