@@ -1,0 +1,373 @@
+.home {
+  background: #0a0a0a;
+  color: white;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+
+  width: 100%;
+
+  height: 92vh;
+
+  overflow: hidden;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.heroImage {
+  position: absolute;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.95) 20%,
+    rgba(0, 0, 0, 0.45) 60%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+
+.heroContent {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 650px;
+
+  padding-left: 5rem;
+}
+
+.heroContent h2 {
+  font-size: 5rem;
+
+  font-weight: 800;
+
+  line-height: 1;
+}
+
+.heroContent h1 {
+  font-size: 7rem;
+
+  color: #c1121f;
+
+  font-weight: 900;
+
+  line-height: 1;
+}
+
+.heroContent span {
+  font-size: 4rem;
+
+  color: #bdbdbd;
+
+  font-style: italic;
+}
+
+.heroContent p {
+  margin-top: 2rem;
+
+  font-size: 1.2rem;
+
+  color: #d1d5db;
+
+  line-height: 1.7;
+
+  max-width: 500px;
+}
+
+.heroContent a,
+.heroContent button {
+  display: inline-block;
+
+  margin-top: 2rem;
+
+  background: #c1121f;
+
+  border: none;
+
+  color: white;
+
+  padding: 1rem 2.5rem;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.heroContent a:hover,
+.heroContent button:hover {
+  background: #e01e37;
+
+  transform: translateY(-3px);
+}
+
+/* FEATURES */
+
+.features {
+  background: #0f0f0f;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 2rem;
+
+  padding: 5rem;
+}
+
+.featureCard {
+  text-align: center;
+}
+
+.featureCard h3 {
+  color: #e01e37;
+
+  font-size: 1.7rem;
+
+  margin-bottom: 1rem;
+}
+
+.featureCard p {
+  color: #cfcfcf;
+
+  line-height: 1.7;
+}
+
+/* DESTINOS */
+
+.destinos {
+  background: #efefef;
+
+  color: #111;
+
+  text-align: center;
+
+  padding: 6rem 2rem;
+}
+
+.destinos span {
+  color: #c1121f;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+.destinos h2 {
+  font-size: 3rem;
+
+  margin-top: 1rem;
+}
+
+.destinos p {
+  margin-top: 1rem;
+
+  color: #555;
+}
+
+.cidades {
+  margin-top: 4rem;
+
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+
+  gap: 1rem;
+}
+
+.cidades div {
+  background: white;
+
+  padding: 2rem 1rem;
+
+  border-radius: 12px;
+
+  font-weight: 600;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+.cidades div:hover {
+  transform: translateY(-5px);
+
+  color: #c1121f;
+}
+
+/* CTA */
+
+.cta {
+  background: linear-gradient(90deg, #700d15, #c1121f, #8d0f19);
+
+  padding: 4rem 5rem;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+}
+
+.cta p {
+  margin-top: 1rem;
+
+  color: #f3f3f3;
+}
+
+.cta button {
+  background: black;
+
+  color: white;
+
+  border: 2px solid white;
+
+  padding: 1rem 2rem;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  border-radius: 8px;
+
+  transition: 0.3s;
+}
+
+.cta button:hover {
+  background: white;
+
+  color: black;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #050505;
+
+  padding: 5rem 3rem 2rem;
+}
+
+.footerGrid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 3rem;
+}
+
+.footer h3,
+.footer h4 {
+  color: #e01e37;
+
+  margin-bottom: 1.5rem;
+}
+
+.footer p,
+.footer a {
+  color: #bdbdbd;
+
+  display: block;
+
+  margin-bottom: 0.8rem;
+
+  text-decoration: none;
+}
+
+.copy {
+  margin-top: 4rem;
+
+  padding-top: 2rem;
+
+  border-top: 1px solid #222;
+
+  text-align: center;
+
+  color: #777;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1080px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cidades {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footerGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta {
+    flex-direction: column;
+
+    gap: 2rem;
+
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroContent {
+    padding: 2rem;
+  }
+
+  .heroContent h2 {
+    font-size: 3rem;
+  }
+
+  .heroContent h1 {
+    font-size: 4.5rem;
+  }
+
+  .heroContent span {
+    font-size: 2.5rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+
+    padding: 3rem 2rem;
+  }
+
+  .destinos h2 {
+    font-size: 2rem;
+  }
+
+  .cidades {
+    grid-template-columns: 1fr;
+  }
+
+  .footerGrid {
+    grid-template-columns: 1fr;
+  }
+}

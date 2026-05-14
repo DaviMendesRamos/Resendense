@@ -1,20 +1,18 @@
-import {Routes, Route, BrowserRouter} from 'react-router-dom'
-import Menu from './pages/Home/index.jsx'
-import Sobre from './pages/Sobre/index.jsx'
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Home from "./pages/Home/index.jsx";
+import Sobre from "./pages/Sobre/sobre.jsx";
+import Horarios from "./pages/Horarios/horarios.jsx";
 
-
-// Importamos com a primeira letra maiúscula
-
-
-function App(){
-    return (
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Menu/>}/>
-          <Route path='/sobre' element={<Sobre/>}/>
-        </Routes>      
-      </BrowserRouter>
-    )
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sobre" element={<Sobre />} />
+        <Route path="/horarios" element={<Horarios />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
