@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter basename="/Resendense">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="Resendense/" element={<Home />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/horarios" element={<Horarios />} />
       </Routes>
