@@ -1,0 +1,32 @@
+.button {
+  display: incline-flex;
+
+  margin-top: 2rem;
+
+  background: #c1121f;
+
+  border: none;
+
+  color: white;
+
+  padding: 1rem 1.5rem;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+
+  width: fit-content;
+}
+.button:hover {
+  background: #e01e37;
+
+  transform: translateY(-3px);
+}

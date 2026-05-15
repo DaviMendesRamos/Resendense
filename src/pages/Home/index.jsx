@@ -1,6 +1,6 @@
 import Navbar from "../../components/Navbar/Navbar.jsx";
 import styles from "./home.module.css";
-
+import Footer from "../../components/Footer/footer.jsx";
 import busImage from "../../assets/ImagemHome5.png";
 
 function Home() {
@@ -87,53 +87,7 @@ function Home() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className={styles.cta}>
-        <div>
-          <h2>Compre suas passagens com praticidade</h2>
-
-          <p>Rápido, seguro e sem filas.</p>
-        </div>
-
-        <button>COMPRAR PASSAGEM</button>
-      </section>
-
-      {/* FOOTER */}
-      <footer className={styles.footer}>
-        <div className={styles.footerGrid}>
-          <div>
-            <h3>Viação Resendense</h3>
-
-            <p>Referência em transporte intermunicipal no Sul Fluminense.</p>
-          </div>
-
-          <div>
-            <h4>Institucional</h4>
-
-            <a href="">Sobre</a>
-            <a href="">Frota</a>
-            <a href="">Contato</a>
-          </div>
-
-          <div>
-            <h4>Ajuda</h4>
-
-            <a href="">Perguntas Frequentes</a>
-            <a href="">Como Comprar</a>
-            <a href="">Política de Privacidade</a>
-          </div>
-
-          <div>
-            <h4>Contato</h4>
-
-            <p>(24) 2107-9400</p>
-            <p>atendimento@viacaoresendense.com.br</p>
-            <p>Resende - RJ</p>
-          </div>
-        </div>
-
-        <div className={styles.copy}>© 2026 Viação Resendense</div>
-      </footer>
+      <Footer />
     </div>
   );
 }

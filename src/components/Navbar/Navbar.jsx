@@ -14,9 +14,12 @@ function Navbar() {
             src={logoResen}
             alt="Viação Resendense"
             className={styles.logo}
+            href="/"
           />
 
-          <h1 className={styles.logoText}>VIAÇÃO RESENDENSE</h1>
+          <h1 className={styles.logoText} href="/">
+            VIAÇÃO RESENDENSE
+          </h1>
         </div>
 
         {/* Botão mobile */}
@@ -31,10 +34,6 @@ function Navbar() {
         <ul className={`${styles.navLinks} ${menuOpen ? styles.active : ""}`}>
           <li>
             <a href="/">INÍCIO</a>
-          </li>
-
-          <li>
-            <a href="/linhas">LINHAS</a>
           </li>
 
           <li>

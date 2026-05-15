@@ -69,7 +69,7 @@
 .lineButton {
   width: 100%;
 
-  background: linear-gradient(90deg, #700d15, #c1121f);
+  background: linear-gradient(90deg, rgb(32, 32, 32), rgb(32, 32, 32));
 
   border: none;
 
@@ -219,7 +219,7 @@ td {
 .hourCard {
   background: #181818;
 
-  border: 1px solid rgba(193, 18, 31, 0.18);
+  border: 1px solid rgba(32, 32, 32);
 
   padding: 0.45rem 0.3rem;
 
@@ -346,4 +346,77 @@ td {
   .hourCard:hover {
     transform: none;
   }
+}
+
+/* =========================
+   CORES DOS HORÁRIOS (DESTAQUE)
+========================= */
+
+/* AZUL */
+.hourCardazul {
+  background: rgba(0, 119, 255, 0.12);
+  border: 1px solid rgba(0, 119, 255, 0.5);
+  color: #7fc7ff;
+}
+
+/* VERDE */
+.hourCardverde {
+  background: rgba(46, 204, 113, 0.12);
+  border: 1px solid rgba(46, 204, 113, 0.5);
+  color: #7fffb0;
+}
+
+/* LARANJA */
+.hourCardlaranja {
+  background: rgba(255, 152, 0, 0.12);
+  border: 1px solid rgba(255, 152, 0, 0.5);
+  color: #ffc27a;
+}
+.hourCardamarelo {
+  background: rgba(255, 255, 0, 0.12);
+  border: 1px solid rgba(255, 255, 0, 0.5);
+  color: #ffff00;
+}
+
+/* =========================
+   LEGENDA
+========================= */
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.7rem;
+  font-size: 0.85rem;
+  color: #d0d0d0;
+}
+
+/* AZUL */
+.legendazul {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background: #0077ff;
+}
+
+/* VERDE */
+.legendverde {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background: #2ecc71;
+}
+
+/* LARANJA */
+.legendlaranja {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background: #ff9800;
+}
+.legendamarelo {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background: #ffff00;
 }

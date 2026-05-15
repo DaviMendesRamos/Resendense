@@ -199,13 +199,15 @@
 }
 
 .cidades div {
-  background: white;
+  background: rgb(35, 35, 35);
 
   padding: 2rem 1rem;
 
   border-radius: 12px;
 
   font-weight: 600;
+
+  color: #f3f3f3;
 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 
@@ -266,52 +268,6 @@
   color: black;
 }
 
-/* FOOTER */
-
-.footer {
-  background: #050505;
-
-  padding: 5rem 3rem 2rem;
-}
-
-.footerGrid {
-  display: grid;
-
-  grid-template-columns: repeat(4, 1fr);
-
-  gap: 3rem;
-}
-
-.footer h3,
-.footer h4 {
-  color: #e01e37;
-
-  margin-bottom: 1.5rem;
-}
-
-.footer p,
-.footer a {
-  color: #bdbdbd;
-
-  display: block;
-
-  margin-bottom: 0.8rem;
-
-  text-decoration: none;
-}
-
-.copy {
-  margin-top: 4rem;
-
-  padding-top: 2rem;
-
-  border-top: 1px solid #222;
-
-  text-align: center;
-
-  color: #777;
-}
-
 /* RESPONSIVO */
 
 @media (max-width: 1080px) {
@@ -320,10 +276,6 @@
   }
 
   .cidades {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footerGrid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -342,15 +294,15 @@
   }
 
   .heroContent h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .heroContent h1 {
-    font-size: 4.5rem;
+    font-size: 3rem;
   }
 
   .heroContent span {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .features {
@@ -364,10 +316,6 @@
   }
 
   .cidades {
-    grid-template-columns: 1fr;
-  }
-
-  .footerGrid {
     grid-template-columns: 1fr;
   }
 }
