@@ -5,7 +5,7 @@ import Horarios from "./pages/Horarios/horarios.jsx";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Resendense">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<Sobre />} />
