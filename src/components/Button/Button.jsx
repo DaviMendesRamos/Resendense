@@ -1,5 +1,9 @@
 import styles from "./button.module.css";
 
-export default function Button({ texto }) {
-  return <button className={styles.button}>{texto}</button>;
+export default function Button({ texto, link, className }) {
+  return (
+    <button className={`${styles.button} ${className || ""}`} onClick={link}>
+      {texto}
+    </button>
+  );
 }

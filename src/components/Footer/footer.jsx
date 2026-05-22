@@ -14,8 +14,8 @@ function Footer() {
         <div>
           <h4>Institucional</h4>
 
-          <a href="">Sobre</a>
-          <a href="">Frota</a>
+          <a href="/sobre">Sobre</a>
+          <a href="/frota">Frota</a>
           <a href="/contato">Contato</a>
         </div>
 

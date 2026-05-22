@@ -3,7 +3,7 @@
 
   margin-top: 2rem;
 
-  background: #c1121f;
+  background-color: #c1121f;
 
   border: none;
 
@@ -26,7 +26,7 @@
   width: fit-content;
 }
 .button:hover {
-  background: #e01e37;
+  background-color: #e01e37;
 
   transform: translateY(-3px);
 }

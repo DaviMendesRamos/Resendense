@@ -2,7 +2,14 @@ import Navbar from "../../components/Navbar/Navbar.jsx";
 import styles from "./sobre.module.css";
 import Footer from "../../components/Footer/footer.jsx";
 import Button from "../../components/Button/Button.jsx";
+import busImage1 from "../../assets/onibusSobre1.png";
+import busImage2 from "../../assets/onibusSobre2.png";
+import busImage3 from "../../assets/onibusSobre3.png";
+import busImage4 from "../../assets/onibusSobre4.png";
+import busImage5 from "../../assets/onibusSobre5.png";
+import { useNavigate } from "react-router-dom";
 function Sobre() {
+  const navigate = useNavigate();
   return (
     <div className={styles.sobre}>
       <Navbar />
@@ -38,19 +45,23 @@ function Sobre() {
           importantes companhias de transporte da região.
         </p>
       </div>
-      <Button texto="Conhecer a frota" />
+      <Button
+        texto="Conhecer a frota"
+        link={() => navigate("/frota")}
+        className={styles.buttonf}
+      />
       <div className={styles.content}>
         <h1>Antiguidade:</h1>
         <section className={styles.images}>
-          <img src="src\assets\onibusSobre1.png" alt="Onibus Antigo 1" />
-          <img src="src\assets\onibusSobre2.png" alt="Onibus Antigo 2" />
-          <img src="src\assets\onibusSobre3.png" alt="Onibus Antigo 3" />
+          <img src={busImage1} alt="Onibus Antigo 1" />
+          <img src={busImage2} alt="Onibus Antigo 2" />
+          <img src={busImage3} alt="Onibus Antigo 3" />
         </section>
 
         <h1>Atualidade:</h1>
         <section className={styles.images}>
-          <img src="src\assets\onibusSobre4.png" alt="Onibus novo 1" />
-          <img src="src\assets\onibusSobre5.png" alt="Onibus novo 2" />
+          <img src={busImage4} alt="Onibus novo 1" />
+          <img src={busImage5} alt="Onibus novo 2" />
         </section>
       </div>
 
